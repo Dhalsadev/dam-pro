@@ -34,3 +34,6 @@ https://codelearnacademy.github.io/java/leccion02/
 
 ## Revisión desde GitHub
 Las variables y los métodos permiten construir programas reutilizables.
+
+## Seguimiento del equipo 1
+Revisión realizada desde la primera copia local.
