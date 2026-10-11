@@ -26,3 +26,8 @@ https://codelearnacademy.github.io/java/
 - Separación de responsabilidades.
 - Validación de entradas.
 - Plan de pruebas.
+
+## Ejercicios de práctica
+1. Planificar sistema de gestión de alumnos.
+2. Describir su menú de opciones.
+3. Proponer pruebas del proyecto.
