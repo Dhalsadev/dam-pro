@@ -31,3 +31,6 @@ https://codelearnacademy.github.io/java/leccion06/
 1. Calcular la media de un array.
 2. Eliminar duplicados.
 3. Ordenar una lista de nombre
+
+## Revisión desde GitHub
+Las colecciones simplifican el tratamiento de conjuntos de datos.
