@@ -24,9 +24,13 @@ https://codelearnacademy.github.io/java/leccion03/
 ## Conceptos clave
 - Diferencia entre while y do-while.
 - Selección múltiple con switch.
-- Captura de excepciones.
+- Captura de excepciones.## Revisión desde GitHub
+El flujo de control determina las acciones ejecutadas por el programa.
 
 ## Ejercicios de práctica
 1. Comprobar si un número es par.
 2. Crear una tabla de multiplicar.
 3. Validar una entrada de usuario.
+
+## Revisión desde GitHub
+El flujo de control determina las acciones ejecutadas por el programa.
