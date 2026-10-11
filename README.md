@@ -20,6 +20,7 @@ Las unidades se añadirán una a una.
 - [Unidad 04 - Organización de clases](unidad-04/)
 - [Unidad 05 - Entrada y salida](unidad-05/)
 - [Unidad 06 - Colecciones y tipos avanzados](unidad-06/)
+- [Unidad 07 - Herencia e interfaces](unidad-07/)
 
 ## Estado
 En construcción.
