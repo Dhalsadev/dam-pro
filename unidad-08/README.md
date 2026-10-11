@@ -21,3 +21,8 @@ Crear una tabla de alumnos.
 
 ## Referencia
 https://codelearnacademy.github.io/java/leccion08/
+
+## Conceptos clave
+- Qué significa persistencia.
+- Ventaja de consultas parametrizadas.
+- Responsabilidad de un DAO.
