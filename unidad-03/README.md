@@ -34,3 +34,6 @@ El flujo de control determina las acciones ejecutadas por el programa.
 
 ## Revisión desde GitHub
 El flujo de control determina las acciones ejecutadas por el programa.
+
+## Seguimiento del equipo 2
+Cambio propio pendiente de sincronización.
