@@ -35,3 +35,6 @@ La entrada y salida permite comunicarse con usuarios y sistemas externos.
 
 ## Revisión desde GitHub
 La entrada y salida permite comunicarse con usuarios y sistemas externos.
+
+## Ronda de sincronización 2
+Dios mio santo, cuanto control v T-T
