@@ -31,3 +31,6 @@ https://codelearnacademy.github.io/java/leccion07/
 1. Crear una jerarquía de vehículos.
 2. Implementar una interfaz Notificable.
 3. Sobrescribir un método.
+
+## Revisión desde GitHub
+El polimorfismo permite trabajar con distintas implementaciones.
