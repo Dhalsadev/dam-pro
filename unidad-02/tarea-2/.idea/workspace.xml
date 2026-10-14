@@ -6,4 +6,48 @@
     &quot;last_opened_file_path&quot;: &quot;/home/alumno/git/dam-pro/unidad-02&quot;
   }
 }</component>
+  <component name="RunManager" selected="Application.Conversor">
+    <configuration name="Conversor" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="homebrew-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.Conversor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ies.puerto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tickets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.Tickets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ies.puerto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="tarea-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="tarea-2" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tickets" />
+      </list>
+    </recent_temporary>
+  </component>
 </project>
