@@ -2,7 +2,7 @@ package ies.puerto;
 import java.util.Scanner;
 
 /**
- * @authot dhalsadev
+ * @autor dhalsadev
  * @version 1.0.0
  */
 public class Conversor {
@@ -11,8 +11,8 @@ public class Conversor {
      * @param valor en kilometros
      * @return resultado en metros
      */
-    public static double kmAMetros(double valor) {
-        double resultadoMetros = valor * 1000;
+    public static float kmAMetros(float valor) {
+        float resultadoMetros = valor * 1000;
         return resultadoMetros;
     }
     /**
@@ -20,8 +20,8 @@ public class Conversor {
      * @param valor en metros
      * @return resultado en centimetrod
      */
-    public static double metrosACentimetros(double valor) {
-        double resultadoCentimetros = valor * 100;
+    public static float metrosACentimetros(float valor) {
+        float resultadoCentimetros = valor * 100;
         return resultadoCentimetros;
     }
     /**
@@ -29,18 +29,20 @@ public class Conversor {
      * @param valor en kilometros
      * @return resultado en millas
      */
-    public static double kmAMetros(double valor) {
-        double resultadoMillas = valor * 1,60934;
+    public static float kmAMillas (float valor) {
+        float resultadoMillas = (float) (valor * 1.60934);
         return resultadoMillas;
     }
 
     static void main() {
 
         Scanner teclado = new Scanner(System.in);
-        int opcion = 0
-        int conversiones = 0;
+        int opcion = 0;
+        float valor = 0;
         float resultado = 0;
-        boolean salida = false
+        int conversiones = 0;
+        boolean salida = false;
+
         System.out.println("====================================");
         System.out.println("         CONVERSOR DAM-PRO");
         System.out.println("====================================");
@@ -48,41 +50,54 @@ public class Conversor {
         String nombre = teclado.nextLine();
         System.out.println("Bienvenida/o, " + nombre + ".");
 
-        while (salida != false) {
+        while (!salida) {
+
             System.out.println("1. Kilómetros a metros");
             System.out.println("2. Metros a centímetros");
             System.out.println("3. Kilómetros a millas");
             System.out.println("4. Salir");
             System.out.println("Selecciona una opción: ");
-            opcion = teclado.nextLine();
+            opcion = teclado.nextInt();
 
             switch (opcion) {
+
                 case 1:
                     System.out.println("Introduce los kilómetros: ");
-                    double valor = scanner.nextDouble();
+                    valor = teclado.nextFloat();
                     resultado = kmAMetros(valor);
                     System.out.println("Resultado: " + resultado);
                     System.out.println("Conversión realizada correctamente.");
+                    conversiones++;
+                    break;
+
                 case 2:
                     System.out.println("Introduce los metros: ");
-                    double valor = scanner.nextDouble();
+                    valor = teclado.nextFloat();
                     resultado = metrosACentimetros(valor);
-                    System.out.println("Resultado: " + resultado)
+                    System.out.println("Resultado: " + resultado);
                     System.out.println("Conversión realizada correctamente.");
+                    conversiones++;
+                    break;
+
                 case 3:
                     System.out.println("Introduce los kilómetros: ");
-                    double valor = scanner.nextDouble();
+                    valor = teclado.nextFloat();
                     resultado = kmAMillas(valor);
                     System.out.println("Resultado: " + resultado);
                     System.out.println("Conversión realizada correctamente.");
+                    conversiones++;
+                    break;
+
                 case 4:
-                    salida = false;
+                    salida = true;
+                    break;
+
                 default:
                     System.out.println("Error, seleccione una opcion valida.");
                     break;
             }
-            converciones
         }
+
         System.out.println("====================================");
         System.out.println("Usuario: " + nombre);
         System.out.println("Conversiones realizadas: " + conversiones);
