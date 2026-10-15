@@ -16,6 +16,11 @@ public class Ahorrador {
         System.out.println("Hola, " + nombre + ".");
         System.out.println("Introduce una cantidad para ahorrar: ");
         float ahorroInicial = teclado.nextInt();
+
+        while (ahorroInicial <= 0) {
+            System.out.println("Porfavor introduzca una cantidad mayor a 0: ");
+            ahorroInicial = teclado.nextInt();
+        }
         System.out.println("Aportación registrada. Ahorro actual: " + ahorroInicial + " euros");
 
         do {
@@ -26,6 +31,10 @@ public class Ahorrador {
             if ("s".equalsIgnoreCase(opcion)) {
                 System.out.println("Introduce una cantidad para ahorrar: ");
                 float aportacion = teclado.nextInt();
+                while (aportacion <= 0) {
+                    System.out.println("Porfavor introduzca una cantidad mayor a 0: ");
+                    aportacion = teclado.nextInt();
+                }
                 ahorroFinal = ahorroInicial + aportacion;
                 System.out.println("Aportación registrada. Ahorro actual: " + ahorroFinal + " euros");
                 aportaciones++;
