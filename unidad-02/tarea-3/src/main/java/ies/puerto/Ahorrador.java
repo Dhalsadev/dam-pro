@@ -1,7 +1,12 @@
 package ies.puerto;
 import java.util.Scanner;
 
+/**
+ * @autor dhalsadev
+ * @version 1.0.0
+ */
 public class Ahorrador {
+
     static void main() {
         Scanner teclado = new Scanner(System.in);
         boolean salida = false;
