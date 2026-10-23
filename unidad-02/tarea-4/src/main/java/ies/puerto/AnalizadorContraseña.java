@@ -115,7 +115,11 @@ public class AnalizadorContraseña {
         return true;
     }
 
-
+    /**
+     * Funcion que genera un informe
+     * @param sCadena String cadena de texto
+     * @return String con el numero de digitos y el resultado
+     */
     static String generarInforme(String sCadena) {
         return "Digitos: " + contarDigitos(sCadena)
                 + ", Resultado: " + esContrasennaValida(sCadena);
