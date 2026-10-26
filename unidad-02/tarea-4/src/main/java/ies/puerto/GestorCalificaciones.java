@@ -33,8 +33,8 @@ public class GestorCalificaciones {
 
     /**
      * Funcion que convierte numeros a notas
-     * @param sNumero
-     * @return
+     * @param sNumero String con el numero de la nota
+     * @return int con la nota
      */
     static int convertirNumeroNotas(String sNumero) {
         int numero = 0;
@@ -45,6 +45,11 @@ public class GestorCalificaciones {
         return numero;
     }
 
+    /**
+     * Funcion que convierte numeros a notas
+     * @param sNumero String con el numero de la nota
+     * @return double con la nota
+     */
     static double convertirNota(String sNumero) {
         double numero = 0;
         if (sNumero == null || sNumero.isEmpty()) {
@@ -54,6 +59,11 @@ public class GestorCalificaciones {
         return numero;
     }
 
+    /**
+     * Funcion que verifica si la nota es valida
+     * @param dNumero double con la nota
+     * @return booleano
+     */
     static boolean esNotaValida(Double dNumero) {
         if (dNumero == null) {
                 return false;
@@ -67,6 +77,11 @@ public class GestorCalificaciones {
         return true;
     }
 
+    /**
+     * Funcion que calcula la media de las notas
+     * @param dNotas double con las notas
+     * @return double con la media de las notas
+     */
     static double calcularMedia(List<Double> dNotas) {
         double media = 0;
         double suma = 0;
@@ -77,6 +92,11 @@ public class GestorCalificaciones {
         return media;
     }
 
+    /**
+     * Funcion que obtiene la nota maxima
+     * @param lNotas double con la lista de notas
+     * @return double con la nota maxima
+     */
     static double obtenerMaximo(List<Double> lNotas) {
         double maximo = 0;
         for (int i = 0; i < lNotas.size(); i++) {
@@ -90,6 +110,11 @@ public class GestorCalificaciones {
         return maximo;
     }
 
+    /**
+     * Funcion que obtiene la nota minima
+     * @param lNotas double con la lista de notas
+     * @return double con la nota minima
+     */
     static double obtenerMinimo(List<Double> lNotas) {
         double minimo = 10;
         for (int i = 0; i < lNotas.size(); i++) {
@@ -104,6 +129,11 @@ public class GestorCalificaciones {
     }
 
 //Sale en el examen
+
+    /**
+     * Funcion que solicita la nota
+     * @return double que contiene la nota
+     */
     static Double solicitarNotaValida() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca la nota: ");
