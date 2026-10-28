@@ -27,12 +27,17 @@ public class ClaveSecreta {
             return "";
         }
 
-        sPalabra.replace("a|A", "4");
-        sPalabra.replace("e|e", "$");
-        sPalabra.replace("i|I", "1");
-        sPalabra.replace("o|O", "0");
-        sPalabra.replace("u|U", "c");
-
+        sPalabra = sPalabra.replace("a", "4");
+        sPalabra = sPalabra.replace("e", "$");
+        sPalabra = sPalabra.replace("i", "1");
+        sPalabra = sPalabra.replace("o", "0");
+        sPalabra = sPalabra.replace("u", "c");
+        sPalabra = sPalabra.replace("A", "4");
+        sPalabra = sPalabra.replace("E", "$");
+        sPalabra = sPalabra.replace("I", "1");
+        sPalabra = sPalabra.replace("O", "0");
+        sPalabra = sPalabra.replace("U", "c");
+        sPalabra = clave = sPalabra;
         return clave;
     }
 }
