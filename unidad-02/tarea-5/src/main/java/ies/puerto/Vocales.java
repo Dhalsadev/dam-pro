@@ -46,11 +46,6 @@ public class Vocales {
                 case 'a': case 'á': case 'e': case 'é': case 'i': case 'í':case 'o': case 'ó': case 'u': case 'ú':
                     resultado += 1;
             }
-
-            if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u'
-                    || caracter == 'á' || caracter == 'é' || caracter == 'í' || caracter == 'ó' || caracter == 'ú') {
-                resultado += 1;
-            }
         }
         return  resultado;
     }
