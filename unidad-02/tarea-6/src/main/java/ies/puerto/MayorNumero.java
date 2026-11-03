@@ -27,6 +27,7 @@ public class MayorNumero {
 
         char finDeNumero = ',';
         numeros = numeros + finDeNumero;
+        numeros = numeros.replace(" ", "");
         String numeroActual = "";
         int mayor = 0;
         boolean primerNumero = true;
@@ -34,7 +35,7 @@ public class MayorNumero {
         for (int i = 0; i < numeros.length(); i++) {
             char caracter = numeros.charAt(i);
 
-            if (caracter != finDeNumero && caracter != ' ') {
+            if (caracter != finDeNumero) {
                 numeroActual = numeroActual + caracter;
             }
 
