@@ -31,8 +31,8 @@ public class NumeroPrimo {
             return false;
         }
 
-        for (int divisor = 2; divisor <= iNumero / divisor; divisor++) {
-            if (iNumero % divisor == 0) {
+        for (int i = 2; i <= iNumero / i; i++) {
+            if (iNumero % i == 0) {
                 return false;
             }
         }
