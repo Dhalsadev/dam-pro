@@ -5,25 +5,22 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de CalculadoraVencimientos.
+ * Calcula las fechas de vencimiento aplicando desplazamientos de calendario.
  *
- * @author
- * @version
+ * @author Dhalsadev
+ * @version 1.0.0
  */
 public final class CalculadoraVencimientos {
-    private CalculadoraVencimientos() { }
-
     /**
-     * TODO: Describe lo que hace el método.
+     * Suma primero los años, despues meses y por ultimo los días a una fecha.
      *
-     * @param fecha
-     * @param dias
-     * @param meses
-     * @param anios
-     * @return
+     * @param fecha LocalDate con la fecha de partida
+     * @param dias int con los días que se van a sumar
+     * @param meses int con los meses que se van a sumar
+     * @param anios int con los años que se van a sumar
+     * @return LocalDate con la fecha del vencimiento
      */
     public static LocalDate calcularVencimiento(LocalDate fecha, int dias, int meses, int anios) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return LocalDate.MIN;
+        return fecha.plusYears(anios).plusMonths(meses).plusDays(dias);
     }
 }

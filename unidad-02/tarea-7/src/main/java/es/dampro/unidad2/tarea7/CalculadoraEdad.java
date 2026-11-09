@@ -5,7 +5,7 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * Clase que calcula la edad
+ * CLase que realiza el calculo de la edad.
  *
  * @author Dhalsadev
  * @version 1.0.0
@@ -16,23 +16,24 @@ public final class CalculadoraEdad {
     public static void main(String[] args) {
         LocalDate nacimiento = LocalDate.of(2007,7,7);
         LocalDate fechaActual = LocalDate.now();
-        Period periodo = Period.between(nacimiento,fechaActual);
+        Period periodo = Period.between(nacimiento, fechaActual);
         int anios = periodo.getYears();
         System.out.println("La edad es: " + anios);
+
     }
 
     /**
-     * Realiza el calculo de la edad
+     * Realiza el calculo de la edad.
      *
      * @param nacimiento LocalDate fecha de nacimiento
      * @param fechaActual LocalDate fecha actual
-     * @return int con la edad
+     * @return LocalDate fecha actual
      */
     public static Period calcularEdad(LocalDate nacimiento, LocalDate fechaActual) {
         boolean posterior = nacimiento.isAfter(fechaActual);
-        if (posterior) {
+        if (posterior){
             throw new IllegalArgumentException();
         }
-        return Period.between(nacimiento,fechaActual);
+        return Period.between(nacimiento, fechaActual);
     }
 }

@@ -5,22 +5,27 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de ValidadorFechas.
+ * Valida y convierte textos con formato dd/MM/uuuu a fechas.
  *
- * @author
- * @version
+ * @author Dhalsadev
+ * @version 1.0.0
  */
 public final class ValidadorFechas {
-    private ValidadorFechas() { }
 
     /**
-     * TODO: Describe lo que hace el método.
+     * Interpreta estrictamente un texto dd/MM/uuuu con dos dígitos de día y mes y cuatro de año.
      *
-     * @param texto
-     * @return
+     * @param texto String con la fecha
+     * @return LocalDate con la fecha del texto
      */
     public static LocalDate validarFecha(String texto) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return LocalDate.MIN;
+        if (texto == null || texto.length() != 10) {
+            throw new DateTimeParseException("Formato incorrecto", String.valueOf(texto), 0);
+        }
+
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+        formato = formato.withResolverStyle(ResolverStyle.STRICT);
+
+        return LocalDate.parse(texto, formato);
     }
 }

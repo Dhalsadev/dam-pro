@@ -5,23 +5,20 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de CuentaAtrasEvento.
+ * Clase que calcula los días que faltan para un evento.
  *
- * @author
- * @version
+ * @author Dhalsadev
+ * @version 1.0.0
  */
 public final class CuentaAtrasEvento {
-    private CuentaAtrasEvento() { }
-
     /**
-     * TODO: Describe lo que hace el método.
+     * Calcula los días entre la fecha actual y el evento.
      *
-     * @param hoy
-     * @param evento
-     * @return
+     * @param hoy LocalDate con la fecha actual
+     * @param evento LocalDate con la fecha del evento
+     * @return long con los días que faltan
      */
     public static long calcularDiasRestantes(LocalDate hoy, LocalDate evento) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return 0L;
+        return ChronoUnit.DAYS.between(hoy, evento);
     }
 }

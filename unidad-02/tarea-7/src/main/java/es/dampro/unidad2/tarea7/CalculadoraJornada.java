@@ -5,24 +5,32 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de CalculadoraJornada.
+ * Clase que calcula el tiempo rabajado en una jornada quitando el descanso.
  *
- * @author
- * @version
+ * @author Dhalsadev
+ * @version 1.0.0
  */
 public final class CalculadoraJornada {
     private CalculadoraJornada() { }
 
     /**
-     * TODO: Describe lo que hace el método.
+     * Calcula lo que se ha trabajado entre la entrada y la salida del mismo día y le resta los minutos de descanso.
+     * La salida tiene que ser despues de la jornada y el descanso no puede ser negativo ni más largo que la jornada.
      *
-     * @param entrada
-     * @param salida
-     * @param descansoMinutos
-     * @return
+     * @param entrada LocalTime con la hora de entrada
+     * @param salida LocalTime con la hora de salida
+     * @param descansoMinutos int con los minutos de descanso que se restan
+     * @return Duration con el tiempo trabajado
      */
     public static Duration calcularTiempoTrabajado(LocalTime entrada, LocalTime salida, int descansoMinutos) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return Duration.ZERO;
+        if (!salida.isAfter(entrada)){
+            throw new IllegalArgumentException("La salida tiene que ser despues de la entrada");
+        }
+        Duration jornada = Duration.between(entrada,salida);
+        if (descansoMinutos < 0 || descansoMinutos > jornada.toMinutes()) {
+            throw new IllegalArgumentException("El descanso no es valido.");
+        }
+
+        return jornada.minusMinutes(descansoMinutos);
     }
 }

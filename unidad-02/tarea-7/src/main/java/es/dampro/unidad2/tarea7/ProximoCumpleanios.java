@@ -5,23 +5,31 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de ProximoCumpleanios.
+ * Clase que muestra la fecha del proximo cumpleaños de una persona.
  *
- * @author
- * @version
+ * @author Nombre y apellidos
+ * @version 1.0
  */
 public final class ProximoCumpleanios {
-    private ProximoCumpleanios() { }
-
     /**
-     * TODO: Describe lo que hace el método.
+     * Calcula el proximo cumpleaños, incluyendo la fecha actual y los bisiestos.
      *
-     * @param nacimiento
-     * @param hoy
-     * @return
+     * @param nacimiento LocalDate con la fecha de nacimiento
+     * @param hoy LocalDate con la fecha actual
+     * @return LocalDate con la fecha del próximo cumpleaños
      */
     public static LocalDate calcularProximoCumpleanios(LocalDate nacimiento, LocalDate hoy) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return LocalDate.MIN;
+        if (nacimiento.isAfter(hoy)) {
+            throw new IllegalArgumentException("El nacimiento no puede ser futuro");
+        }
+
+        int anios = hoy.getYear() - nacimiento.getYear();
+        LocalDate cumple = nacimiento.plusYears(anios);
+
+        if (cumple.isBefore(hoy)) {
+            cumple = nacimiento.plusYears(anios + 1);
+        }
+
+        return cumple;
     }
 }
