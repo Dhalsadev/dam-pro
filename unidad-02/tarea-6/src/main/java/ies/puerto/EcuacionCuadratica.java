@@ -9,11 +9,11 @@ package ies.puerto;
 public class EcuacionCuadratica {
 
     /**
-     * Calcula (b² - 4ac) de la ecuacion ax² + bx + c = 0
+     * Calcula el  discriminante de la ecuacion cuadratica
      * a partir de los tres coeficientes finitos que se encuentran en las cadenas.
      *
-     * @param a String con el coeficiente de x², debe ser distinto de cero
-     * @param b String con el coeficiente de x
+     * @param a String con el coeficiente a
+     * @param b String con el coeficiente b
      * @param c String con el termino independiente
      * @return double con el valor del discriminante
      * @throws IllegalArgumentException si algun coeficiente es nulo, esta vacio, no es un numero real finito, si a es cero o si el resultado no es finito

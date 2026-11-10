@@ -8,8 +8,6 @@ package ies.puerto;
  */
 public class MediaNumeros {
 
-
-
     /**
      * Calcula la media de una lista no vacia de enteros separados por comas,
      * con espacios opcionales alrededor de cada numero y no redondea el resultado.
@@ -29,6 +27,7 @@ public class MediaNumeros {
 
         char finDeNumero = ',';
         numeros = numeros + finDeNumero;
+        numeros = numeros.replace(" ", "");
         String numeroActual = "";
         double suma = 0;
         int cantidad = 0;
@@ -36,11 +35,12 @@ public class MediaNumeros {
         for (int i = 0; i < numeros.length(); i++) {
             char caracter = numeros.charAt(i);
 
-            if (caracter != finDeNumero && caracter != ' ') {
+            if (caracter != finDeNumero) {
                 numeroActual = numeroActual + caracter;
+            }
 
-                int numero = Integer.parseInt(numeroActual);
-                suma = suma + numero;
+            if (caracter == finDeNumero) {
+                suma = suma + Integer.parseInt(numeroActual);
                 cantidad++;
                 numeroActual = "";
             }

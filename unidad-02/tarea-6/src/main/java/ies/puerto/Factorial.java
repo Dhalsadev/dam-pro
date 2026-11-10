@@ -24,15 +24,15 @@ public class Factorial {
             throw new IllegalArgumentException("El numero no puede estar vacio");
         }
 
-        numero = Integer.parseInt(numero);
+        int inumero = Integer.parseInt(numero);
 
-        if (numero < 0 || numero > 12) {
+        if (inumero < 0 || inumero > 12) {
             throw new IllegalArgumentException("El numero debe estar entre 0 y 12");
         }
 
         int resultado = 1;
 
-        for (int i = 2; i <= numero; i++) {
+        for (int i = 2; i <= inumero; i++) {
             resultado *= i;
         }
 

@@ -1,6 +1,6 @@
 package ies.puerto;
 
-public class SumarDigito {
+public class SumaDigitos {
 
     /**
      * Suma los digitos de un entero positivo indicado como texto.
