@@ -1,12 +1,34 @@
 package es.educacion.arrays;
 
-// Ejercicio 12. Devuelve una copia rotada a la derecha el número no negativo de posiciones. Vacío devuelve vacío. No modifica el original. Null o posiciones negativas: IllegalArgumentException.
-// TODO: escribir el Javadoc de la clase, del método, sus parámetros y retorno.
+/**
+ * Devuelve una copia rotada a la derecha el número no negativo de posiciones.
+ *
+ * @author Dhalsadev
+ * @version 1.0.0
+ */
 public final class Ejercicio12RotarDerecha {
     private Ejercicio12RotarDerecha() { }
 
-    // Contrato: Devuelve una copia rotada a la derecha el número no negativo de posiciones. Vacío devuelve vacío. No modifica el original. Null o posiciones negativas: IllegalArgumentException.
+    /**
+     * Devuelve una copia rotada a la derecha el número no negativo de posiciones.
+     * Vacío devuelve vacío. No modifica el original.
+     *
+     * @param numeros int[] de enteros
+     * @param posiciones int con el numero de posiciones
+     * @return int[] rotado a la derecha l numero de posiciones
+     */
     public static int[] rotar(int[] numeros, int posiciones) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+
+        if (numeros == null) {
+            throw new IllegalArgumentException("El array es nulo");
+        }
+
+        if (numeros.length == 0) {
+            return numeros;
+        }
+
+        for (int i = 0; i < numeros.length; i++) {
+            int numero = numeros[i];
+        }
     }
 }
