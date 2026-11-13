@@ -9,6 +9,13 @@ package es.educacion.arrays;
 public final class Ejercicio05Buscar {
     private Ejercicio05Buscar() { }
 
+    public static void main(String[] args) {
+        int[] numeros = {4, 8, 15, 8, 23};
+        int valorBuscado = 8;
+        int resultado = buscar(numeros, valorBuscado);
+        System.out.println("La primera posición del " + valorBuscado + " es " + resultado);
+    }
+
     /**
      * Calcula la suma de un array
      *
@@ -18,8 +25,12 @@ public final class Ejercicio05Buscar {
      * @exception IllegalArgumentException
      */
     public static int buscar(int[] numeros, int objetivo) {
-        if (numeros == null || numeros.length == 0) {
-            throw new IllegalArgumentException("El array es nulo o vacio");
+        if (numeros == null) {
+            throw new IllegalArgumentException("El array es nulo");
+        }
+
+        if (numeros.length == 0) {
+            return -1;
         }
 
         for (int i = 0; i < numeros.length; i++) {

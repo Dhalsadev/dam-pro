@@ -26,8 +26,12 @@ public final class Ejercicio04ContarAprobados {
      * @exception IllegalArgumentException
      */
     public static int contarAprobados(int[] notas) {
-        if (notas == null || notas.length == 0) {
-            throw new IllegalArgumentException("El array es nulo o vacio");
+        if (notas == null) {
+            throw new IllegalArgumentException("El array es nulo");
+        }
+
+        if (notas.length == 0) {
+            return 0;
         }
 
         int cantidad = 0;
