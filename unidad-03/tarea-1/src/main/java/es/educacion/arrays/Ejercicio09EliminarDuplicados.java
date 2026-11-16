@@ -32,23 +32,23 @@ public final class Ejercicio09EliminarDuplicados {
             throw new IllegalArgumentException("El array es nulo");
         }
 
-        int[] unicos = new int[numeros.length];
+        int[] numerosUnicos = new int[numeros.length];
         int cantidad = 0;
 
         for (int numero:numeros) {
             boolean repetido = false;
 
             for (int i = 0; i < cantidad && !repetido; i++) {
-                if (unicos[i] == numero) {
+                if (numerosUnicos[i] == numero) {
                     repetido = true;
                 }
             }
 
             if (!repetido) {
-                unicos[cantidad] = numero;
+                numerosUnicos[cantidad] = numero;
                 cantidad++;
             }
         }
-        return Arrays.copyOf(unicos, cantidad);
+        return Arrays.copyOf(numerosUnicos, cantidad);
     }
 }
