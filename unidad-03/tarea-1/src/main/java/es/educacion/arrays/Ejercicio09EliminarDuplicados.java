@@ -32,6 +32,10 @@ public final class Ejercicio09EliminarDuplicados {
             throw new IllegalArgumentException("El array es nulo");
         }
 
+        if (numeros.length == 0) {
+            return numeros;
+        }
+
         int[] numerosUnicos = new int[numeros.length];
         int cantidad = 0;
 
