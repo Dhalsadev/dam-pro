@@ -19,7 +19,6 @@ public final class Ejercicio08CopiarRango {
 
     /**
      * Devuelve una copia desde inicio (incluido) hasta fin (excluido).
-     * Usa índices válidos con 0 <= inicio <= fin <= length.
      *
      * @param numeros int[] de enteros
      * @param inicio int con el inicio del intervalo

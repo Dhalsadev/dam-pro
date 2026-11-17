@@ -1,6 +1,5 @@
 package es.educacion.arrays;
 
-import java.util.Arrays;
 
 /**
  * Clase que cuenta las apariciones exactas de un valor objetivo.

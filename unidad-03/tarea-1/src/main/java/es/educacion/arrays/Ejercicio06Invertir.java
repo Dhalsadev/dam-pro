@@ -1,6 +1,5 @@
 package es.educacion.arrays;
 
-import java.sql.Array;
 import java.util.Arrays;
 
 /**

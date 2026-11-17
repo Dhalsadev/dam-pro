@@ -35,14 +35,12 @@ public final class Ejercicio14Interseccion {
 
         int[] resultado = new int[a.length + b.length];
         int cantidad = 0;
-        int iResultado = 0;
 
         for (int i = 0; i < a.length; i++) {
             int numero = a[i];
             boolean yaIncluido = false;
-            boolean estaEnB = false;
 
-            for (int j = 0; j < iResultado; j++) {
+            for (int j = 0; j < cantidad; j++) {
                 if (resultado[j] == numero) {
                     yaIncluido = true;
                     break;
@@ -52,15 +50,14 @@ public final class Ejercicio14Interseccion {
             if (!yaIncluido) {
                 for (int j = 0; j < b.length; j++) {
                     if (b[j] == numero) {
-                        estaEnB = true;
-                        resultado[iResultado] = numero;
-                        iResultado++;
+                        resultado[cantidad] = numero;
+                        cantidad++;
                         break;
                     }
                 }
             }
         }
 
-        return Arrays.copyOf(resultado, iResultado);
+        return Arrays.copyOf(resultado, cantidad);
     }
 }

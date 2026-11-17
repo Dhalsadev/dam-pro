@@ -10,16 +10,9 @@ public final class Ejercicio01Sumar {
     private Ejercicio01Sumar() { }
 
     public static void main(String[] args) {
-        int [] elementos = new int[6];
-        elementos[0] = 7;
-        elementos[1] = 8;
-        elementos[2] = 2;
-        elementos[3] = 3;
-        elementos[4] = 414;
-        elementos[5] = 280;
         int [] numeros = {7,8,2,3,414,280};
 
-        int sumaElementos = sumar(elementos);
+        int sumaElementos = sumar(numeros);
         System.out.println("La suma de elementos es: " + sumaElementos);
     }
 
