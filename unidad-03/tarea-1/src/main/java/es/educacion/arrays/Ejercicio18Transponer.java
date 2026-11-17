@@ -26,21 +26,21 @@ public final class Ejercicio18Transponer {
             return matriz;
         }
 
-        int[] primeraFila = matriz[0];
+        //int[] primeraFila = matriz[0];
 
         for (int i = 0; i < matriz.length; i++) {
-            int[] fila = matriz[i];
+            //int[] fila = matriz[i];
 
-            if (fila == null) {
+            if (matriz[i] == null) {
                 throw new IllegalArgumentException("Una fila es nula");
             }
 
-            if (fila.length != primeraFila.length) {
+            if (matriz[i].length != matriz[0].length) {
                 throw new IllegalArgumentException("La matriz es irregular");
             }
         }
 
-        int[][] resultado = new int[primeraFila.length][matriz.length];
+        int[][] resultado = new int[matriz[0].length][matriz.length];
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {

@@ -52,3 +52,7 @@ public final class Ejercicio16SumaFilas {
         return resultado;
     }
 }
+
+// Ejemplo de como funciona un for dentro del otro con los int[][] para no liarme
+// i 0 = matriz[0] = {1, 2, 3} -> j 0 = 1, j 1 = 2, j 2 = 3
+// i 1 = matriz[1] = {4, 5, 6} -> j 0 = 4, j 1 = 5, j 2 = 6

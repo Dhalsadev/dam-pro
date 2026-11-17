@@ -27,24 +27,21 @@ public final class Ejercicio17Diagonal {
             throw new IllegalArgumentException("La matriz es nula");
         }
 
-        for (int i = 0; i < matriz.length; i++) {
-            int[] fila = matriz[i];
-
-            if (fila == null) {
-                throw new IllegalArgumentException("Una fila es nula");
-            }
-
-            if (fila.length != matriz.length) {
-                throw new IllegalArgumentException("La matriz no es cuadrada");
-            }
-        }
-
         int sumaDiagonal = 0;
+        int filas = matriz.length;
 
-        for (int i = 0; i < matriz.length; i++) {
+        for (int i = 0; i < filas; i++) {
+            // int[] fila = matriz[i]; de esta forma gastas más recursos
+            if (matriz[i] == null || matriz[i].length != filas) {
+                throw new IllegalArgumentException();
+            }
             sumaDiagonal += matriz[i][i];
         }
 
         return sumaDiagonal;
     }
 }
+
+// Ejemplo de como funciona un for dentro del otro con los int[][] para no liarme
+// i 0 = matriz[0] = {1, 2} -> j 0 = 1, j 1 = 2
+// i 1 = matriz[1] = {4, 5} -> j 0 = 4, j 1 = 5

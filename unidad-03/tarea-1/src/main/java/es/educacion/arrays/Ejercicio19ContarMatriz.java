@@ -31,14 +31,14 @@ public final class Ejercicio19ContarMatriz {
         int apariciones = 0;
 
         for (int i = 0; i < matriz.length; i++) {
-            int[] fila = matriz[i];
+            //int[] fila = matriz[i];
 
-            if (fila == null) {
+            if (matriz[i] == null) {
                 throw new IllegalArgumentException("Una fila es nula");
             }
 
-            for (int j = 0; j < fila.length; j++) {
-                int numero = fila[j];
+            for (int j = 0; j < matriz[i].length; j++) {
+                int numero = matriz[i][j];
 
                 if (numero == objetivo) {
                     apariciones++;
