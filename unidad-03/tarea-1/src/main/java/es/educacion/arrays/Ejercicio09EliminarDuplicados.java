@@ -45,6 +45,7 @@ public final class Ejercicio09EliminarDuplicados {
             for (int i = 0; i < cantidad && !repetido; i++) {
                 if (numerosUnicos[i] == numero) {
                     repetido = true;
+                    break;
                 }
             }
 

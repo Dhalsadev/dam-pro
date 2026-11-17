@@ -28,11 +28,10 @@ public final class Ejercicio17Diagonal {
         }
 
         int sumaDiagonal = 0;
-        int filas = matriz.length;
 
-        for (int i = 0; i < filas; i++) {
+        for (int i = 0; i < matriz.length; i++) {
             // int[] fila = matriz[i]; de esta forma gastas más recursos
-            if (matriz[i] == null || matriz[i].length != filas) {
+            if (matriz[i] == null || matriz[i].length != matriz.length) {
                 throw new IllegalArgumentException();
             }
             sumaDiagonal += matriz[i][i];

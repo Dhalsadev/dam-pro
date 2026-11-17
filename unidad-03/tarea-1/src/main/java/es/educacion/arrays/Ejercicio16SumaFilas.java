@@ -33,13 +33,13 @@ public final class Ejercicio16SumaFilas {
 
         for (int i = 0; i < matriz.length; i++) {
             int sumaFila = 0;
-            int[] fila = matriz[i];
+            //int[] fila = matriz[i];
 
-            if (fila == null) {
+            if (matriz[i] == null) {
                 throw new IllegalArgumentException();
             }
             for (int j = 0; j < matriz[i].length; j++) {
-                sumaFila += fila[j];
+                sumaFila += matriz[i][j];
            }
             resultado[i] = sumaFila;
 
