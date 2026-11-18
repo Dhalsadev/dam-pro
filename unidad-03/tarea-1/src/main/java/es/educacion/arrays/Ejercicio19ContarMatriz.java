@@ -12,7 +12,7 @@ public final class Ejercicio19ContarMatriz {
     public static void main(String[] args) {
         int[][] matriz = {{1, 2, 3}, {4, 3, 2}, {3, -2, -3}};
         int resultado = contar(matriz, 3);
-        System.out.println("La suma de la diagonal es " + resultado);
+        System.out.println("Las veces que aparecen son: " + resultado);
     }
 
     /**
